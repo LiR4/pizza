@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" href = "favicon_io/ícone.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+    <title>Border Pizza</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="#">Cardápio</a></li>
+          <li><a href="receitas.html">Receita</a></li>
+          <li><a href="unidades.html">Unidades</a></li>
+          <li><a href="contato.html">Contatos</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="topbar">
+          <img src = "images/99954.png" height="96px" width="96px">
+          <div class="toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <section class="banner" id="banner">
+          <div class="content">
+            <div class="imgBx">
+              <img src= "images/Screenshot_20211001-155443_Facebook.jpg" width="300" height="300">
+            </div>
+            <h3>Border Pizza</h3>
+            <p class = "inf">
+              Pizza com toques de alta gastronomia em ambiente despojado. Gourmet, mas sem deixar de lado o gosto e a “graça” de uma pizza com massa caseira, com ingredientes de preparo artesanal. 
+              Assim é a Graça di Napolli, inaugurada no burburinho de Santana, zona norte de São Paulo. O nome é uma homenagem à matriarca da família dos sócios,
+              a napolitana Dona Graça, e também à Napoli, considerada o berço mundial da pizza. Grafada, no caso da nova casa, com dois “l”, “Napolli”, por uma superstição dos sócios.
+            </p>
+            <a href="#" class="btn">Rua Endereço Verídico, 120</a>
+          </div>
+          <div class="fullGrid">
+            <div class="box">
+              <div class="cont">
+                <img src="images/99954.png" alt="">
+                <h3>muçarela</h3>
+                <p>20% off</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="cont">
+                <img src="images/99954.png" alt="">
+                <h3>calebresa</h3>
+                <p>15% off</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="cont">
+                <img src="images/99954.png" alt="">
+                <h3>Compre duas pizzas <br>e<br> ganhe um Dolly</h3>
+              </div>
+            </div>
+            <div class="box">
+              <div class="cont">
+                <img src="images/99954.png" alt="">
+                <h3>Compre três pizzas <br>e<br> ganhe um brotinho</h3>
+              </div>
+            </div>
+            <div class="box">
+              <div class="cont">
+                <img src="images/99954.png" alt="">
+                <h3>Seu aniversário ??</h3>
+                <p>Ganhe 40% de desconto</p>
+              </div>
+            </div>
+            <div class="box">
+              <div class="cont">
+                <img src="images/99954.png" alt="">
+                <h3></h3>
+              </div>
+            </div>
+            <div class="box">
+              <div class="cont">
+                <img src="images/99954.png" alt="">
+                <h3></h3>
+              </div>
+            </div>
+
+            </div>
+          </div>
+        </section>
+        
+      </div>
+    </div>
+
+    <script>
+      let toggle = document.querySelector('.toggle')
+      let topbar = document.querySelector('.topbar')
+      let navigation = document.querySelector('.navigation')
+      let main = document.querySelector('.main')
+      toggle.onclick = function () {
+        toggle.classList.toggle('active')
+        topbar.classList.toggle('active')
+        navigation.classList.toggle('active')
+        main.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>

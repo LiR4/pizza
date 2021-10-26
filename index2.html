@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles2.css" />
+    <link rel="shortcut icon" href = "favicon_io/ícone.png">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+
+    <title>Border Pizza</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navigation">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">Cardápio</a></li>
+          <li><a href="receitas.html">Receita</a></li>
+          <li><a href="unidades.html">Unidades</a></li>
+          <li><a href="contato.html">Contatos</a></li>
+        </ul>
+      </div>
+      <div class="main">
+        <div class="topbar">
+          <img src = "images/99954.png" height="96px" width="96px">
+          <div class="toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+          </div>
+        </div>
+
+        <div class="grade">
+            <div class="caixa um">Mussarela</div>
+            <div class="caixa dois">Calabresa</div>
+            <div class="caixa tres">Marguerita</div>
+            <div class="caixa quatro">quatro</div>
+            <div class="caixa cinco">cinco</div>
+            <div class="caixa seis">seis</div>
+            <div class="caixa sete">sete</div>
+            <div class="caixa oito">oito</div>
+            <div class="caixa nove">nove</div>
+    
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let toggle = document.querySelector('.toggle')
+      let topbar = document.querySelector('.topbar')
+      let navigation = document.querySelector('.navigation')
+      let main = document.querySelector('.main')
+      toggle.onclick = function () {
+        toggle.classList.toggle('active')
+        topbar.classList.toggle('active')
+        navigation.classList.toggle('active')
+        main.classList.toggle('active')
+      }
+    </script>
+  </body>
+</html>

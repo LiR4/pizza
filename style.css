@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2? family = Poppins: wght @ 500; 700 & display = swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root {
+  --black: #333;
+  --black2: #333;
+  --white: #fff;
+  --white: #fff;
+}
+
+body {
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+}
+
+.navigation {
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  background: var(--white2);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: width 0.5s;
+  background-color: rgb(255, 208, 0);
+  border-right: solid black 2.5px;
+
+}
+
+.navigation.active {
+  width: 0;
+}
+
+.navigation ul {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 40px;
+  margin-bottom: 120px;
+}
+
+.navigation ul li {
+  position: relative;
+  width: 100%;
+  list-style: none;
+}
+
+.navigation ul li a  {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 40px 0;
+  white-space: normal;
+  display: flex;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 600;
+  color: red;
+  letter-spacing: 2px;
+  opacity: 0.5;
+
+
+}
+
+.navigation ul li a:hover {
+  opacity: 1;
+}
+
+.main {
+  position: absolute;
+  left: 300px;
+  width: calc(100% - 300px);
+  min-height: 100vh;
+  transition: 0.5s, left 0.5s;
+  background-color: rgb(211, 68, 49);
+}
+
+.main.active {
+  width: calc(100% - 0px);
+  left: 0px;
+}
+
+.main .topbar {
+  position: fixed;
+  top: 0;
+  width: calc(100% - 300px);
+  left: 300px;
+  background: var(--white2);
+  border-bottom: 2.5px solid black;
+  height: 60px;
+  padding: 55px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10000;
+  transition: 0.5s, left 0.5s;
+}
+
+.main .topbar.active {
+  width: calc(100% - 0px);
+  left: 0px;
+}
+
+.main .topbar .logo {
+  color: var(--black);
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.main .topbar .toggle {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  color: var(--black);
+}
+
+/*===================== Parte do texto/info ====================== */
+
+section {
+  position: relative;
+  min-height: 100vh;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.banner .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.banner .imgBx {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid black 5px;
+  margin-bottom: 20px;
+}
+
+.banner .imgBx img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+h3 {
+  position: relative;
+  font-size: 1.4em;
+  color: var(--black);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+p {
+  color: #777;
+}
+
+.btn {
+  position: relative;
+  display: inline-block;
+  padding: 10px 30px;
+  background: var(--black2);
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.content p {
+  color: var(--black);
+  width: 50%;
+  text-align: center;
+  font-size: larger;
+}
+
+.inf {
+  margin-top: 10px;
+  margin-bottom: 90px;
+}
+
+.home {
+  color: black;
+}
+
+/* grid */
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.grade{
+  margin-top: 190px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+
+  grid-template-areas: "um um dois"
+                       ". tres ."   ;
+}
+.caixa{
+  background-color: rgb(255, 208, 0);
+   border: 3px solid black;
+  text-align: center;
+}
+.um{
+  padding: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.dois{
+  padding: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.tres{
+  padding: 20%;
+  margin-left: 5%;
+  margin-right: 5%;
+
+}

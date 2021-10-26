@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="shortcut icon" href="../Home/favicon_io/ícone.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Border Pizza</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Cardápio</a></li>
+                <li><a href="receitas.html">Receita</a></li>
+                <li><a href="unidades.html">Unidades</a></li>
+                <li><a href="contato.html">Contatos</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="topbar">
+                <div class="imgimg">
+                    <a href="index.html"><img src="images/99954.png" height="96px" width="96px"></a>
+                </div>
+                <div class="toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class="pedro">
+                <div class="contato">
+                    <h3>Complete com seus dados</h3>
+                    <form method="GET">
+                        <p>Nome</p>
+                        <input type="text" id="nome" name="Nome" placeholder="Nome..." required>
+                        <p>Sobrenome</p>
+                        <input type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome..." required>
+                        <p>E-mail</p>
+                        <input type="email" id="email" name="E-mail" placeholder="E-mail..." required>
+                        <p>Telefone</p>
+                        <input type="text" placeholder="99999-9999" name="Telefone" maxlength="9">
+                        <p>Data de nascimento</p>
+                        <select name="dia" id="dia" required>
+                            <option selected disabled value="">Dia</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <select name="mês" id="mês" required>
+                            <option selected disabled value="">Mês</option>
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                            <option>6</option>
+                            <option>7</option>
+                            <option>8</option>
+                            <option>9</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                        </select>
+                        <p>Ano de nascimento</p>
+                        <input type="text" id="ano" placeholder="Ano de nascimento..." name="Ano de nascimento"
+                            maxlength="4" required>
+                    </form>
+                </div>
+                <div class="entrega">
+                    <h3>Endereço de entrega</h3>
+                    <p>Rua</p>
+                    <input type="text" id="end" placeholder="Endereço Verídico" name="Rua" required>
+                    <p>Número</p>
+                    <input type="text" id="end" placeholder="666" name="Numero" required>
+                    <p>Complemento</p>
+                    <input type="text" id="end" placeholder="Opcional" name="complemento">
+                    <p>De qual pizzaria você gostaria de pedir?</p>
+                    <select name="zona" id="zona" required>
+                        <option selected disabled value="">Selecione</option>
+                        <option>Border Pizza - Zona Sul</option>
+                        <option>Border Pizza - Zona Oeste</option>
+                        <option>Border Pizza - Zona Leste</option>
+                        <option>Border Pizza - Zona Norte</option>
+                    </select>
+                </div>
+                <div class="pizza">
+                    <h3>Sobre seu pedido</h3>
+                    <p> <b>Sabor de pizza: </b></p>
+                    <label for="pizza1"> Calabresa</label>
+                    <input type="checkbox" id="pizza1" name="pizza1" value="calabresa">
+                    <label for="pizza2"> Mussarela</label>
+                    <input type="checkbox" id="pizza2" name="pizza2" value="mussarela">
+                    <label for="pizza3"> Margherita</label>
+                    <input type="checkbox" id="pizza3" name="pizza3" value="marg">
+                    <label for="pizza4"> Portuguesa</label>
+                    <input type="checkbox" id="pizza4" name="pizza4" value="port">
+                    <label for="pizza5"> Pepperoni</label>
+                    <input type="checkbox" id="pizza5" name="pizza5" value="pepp">
+                    <label for="pizza6"> 4 queijos</label>
+                    <input type="checkbox" id="pizza6" name="pizza6" value="4q">
+                    <label for="pizza7"> Mussarela de búfula</label>
+                    <input type="checkbox" id="pizza7" name="pizza7" value="mussb">
+                    <label for="pizza8"> Frango c/ Catupiry</label>
+                    <input type="checkbox" id="pizza8" name="pizza8" value="fcc">
+                    <label for="pizza9"> Brigadeiro com morango</label>
+                    <input type="checkbox" id="pizza8" name="pizza9" value="brig">
+                    <p><b>Observações: </b></p>
+                    <textarea rows="5" style="width: 250px;"></textarea>
+                </div>
+            </div>
+            <div class="conc">
+                <div id="bottão">
+                    <a href="obg.html"><button type="submit">Concluído</button></a>
+                </div>
+            </div>
+        </div>
+        <script>
+            let toggle = document.querySelector('.toggle')
+            let topbar = document.querySelector('.topbar')
+            let navigation = document.querySelector('.navigation')
+            let main = document.querySelector('.main')
+            toggle.onclick = function () {
+            toggle.classList.toggle('active')
+            topbar.classList.toggle('active')
+            navigation.classList.toggle('active')
+            main.classList.toggle('active')
+            }
+        </script>
+</body>
+
+</html>
